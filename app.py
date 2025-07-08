@@ -7,12 +7,12 @@ model = joblib.load('fake_news_model.pkl')
 vectorizer = joblib.load('tfidf_vectorizer.pkl')
 
 # UI Setup
-st.set_page_config(page_title="📰 Fake News Detector", layout="centered")
-st.markdown("<h1 style='text-align: center; color: #ff6347;'>🧠 Fake News Detector 🔍</h1>", unsafe_allow_html=True)
+st.set_page_config(page_title="Fake News Detector", layout="centered")
+st.markdown("<h1 style='text-align: center; color: #ff6347;'> Fake News Detector </h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Enter a news article below to check if it's real or fake!</p>", unsafe_allow_html=True)
 
 # Input text
-user_input = st.text_area("📝 Paste News Article Text Here", height=300)
+user_input = st.text_area("📝 Paste **News Article** Text Here", height=300)
 
 # Predict button
 if st.button("Check News ✅"):
@@ -29,4 +29,4 @@ if st.button("Check News ✅"):
 
 # Footer
 st.markdown("---")
-st.markdown("<p style='text-align: center; font-size: 12px;'>Built with ❤️ using Streamlit</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; font-size: 12px;'>Built by Anirudha Pujari</p>", unsafe_allow_html=True)
